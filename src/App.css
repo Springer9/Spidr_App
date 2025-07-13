@@ -1,0 +1,133 @@
+/*
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*/
+
+/* src/App.css */
+
+:root {
+  --color-black: #000000;
+  --color-background: #000000;
+  --color-button-hover: rgba(35, 69, 76, 0.8);
+  --spidr-blue-official: #56acbd;
+  --spidr-white-official: #fff;
+  --spidr-blue-trans: rgba(86,172,189,.8);
+
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--spidr-white-official);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: var(--spidr-blue-trans);
+  border-radius: 0;
+  border: 1px solid var(--spidr-blue-official);
+  box-shadow: 0 0 12px rgba(10, 132, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-row input {
+  flex: 1
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--spidr-white-official);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  background-color: var(--spidr-white-official);
+  color: var(--color-black);
+  border: 1px solid var(--spidr-blue-official);
+  border-radius: 0;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--spidr-white-official);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--spidr-white-official);
+  background: transparent;
+  color: var(--spidr-white-official);
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--color-button-hover);
+  color: var(--spidr-blue-official);
+  border: var(--spidr-blue-official);
+}
